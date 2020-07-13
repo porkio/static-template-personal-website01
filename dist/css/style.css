@@ -365,7 +365,8 @@ div {
     font-size: .8em;
     border: none;
     border-radius: 5px;
-    background-color: #e6e4e4; }
+    background-color: #e6e4e4;
+    resize: none; }
   #contact .contact-form a {
     margin-top: 1.5rem;
     padding: .4rem 1.9rem; }
