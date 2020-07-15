@@ -66,8 +66,11 @@
     overflow: visible; }
   #what .items {
     padding: 0; }
-  #partners .partners-items .partners-img, #partners .partners-items .partners-info {
-    padding: 2rem 1rem; }
+  #partners .partners-items {
+    padding: 0; }
+    #partners .partners-items div {
+      padding: 1rem;
+      min-height: 240px; }
   #friends .frined-items {
     padding-left: 0; }
     #friends .frined-items .friend-box {
@@ -75,6 +78,6 @@
   #contact .contact-form, #contact .contact-img {
     padding: 2rem 1rem; }
   .wechat-layer {
-    right: 20px; }
+    right: -30px; }
   #main-footer .footer-icon {
     right: 0; } }

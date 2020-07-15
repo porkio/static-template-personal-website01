@@ -40,9 +40,11 @@ if (bannerImg) {
 var activedEle = document.getElementsByClassName('item-active')[0];
 
 if (viewWidth >= 768) {
-    activedEle.style.backgroundColor = '#e6e4e4';
-    activedEle.getElementsByTagName('i')[0].style.color = '#e6e4e4';
-    activedEle.getElementsByTagName('i')[0].style.backgroundColor = '#6aa426';
+    if (activedEle) {
+        activedEle.style.backgroundColor = '#f6f6f6';
+        activedEle.getElementsByTagName('i')[0].style.color = '#f6f6f6';
+        activedEle.getElementsByTagName('i')[0].style.backgroundColor = '#6aa426';
+    }
 }
 
 function activeThis(ele) {
@@ -55,8 +57,8 @@ function activeThis(ele) {
             items[i].getElementsByTagName('i')[0].style.color = '';
             items[i].getElementsByTagName('i')[0].style.backgroundColor = '';
         }
-        ele.style.backgroundColor = '#e6e4e4';
-        icon.style.color = '#e6e4e4';
+        ele.style.backgroundColor = '#f6f6f6';
+        icon.style.color = '#f6f6f6';
         icon.style.backgroundColor = '#6aa426';
     }
 }

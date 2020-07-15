@@ -195,7 +195,7 @@ div {
 .container {
     max-width: 1152px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem 0;
     overflow: hidden
 }
 
@@ -269,8 +269,10 @@ div {
             padding: 1rem;
             transition: .3s;
             color: $text-color-primary;
+            box-shadow: 2px 2px 8px #ddd;
+            margin: 0 1rem;
             &:hover {
-                background-color: $color-light;
+                background-color: #f6f6f6;
                 & i {
                     color: $color-light;
                     background-color: $color-hover;
@@ -440,7 +442,7 @@ div {
         & .partners-items {
             flex-flow: column;
             & div {
-                min-height: 240px;
+                min-height: 320px;
             }
         }
     }
@@ -452,7 +454,7 @@ div {
             padding: 0;
             flex-flow: column;
             & .item {
-                border-bottom: 1px solid #e6e4e4;
+                margin-top: 1rem;
             }
         }
     }

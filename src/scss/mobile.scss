@@ -94,11 +94,14 @@
     }
     #partners {
         & .partners-items {
-            & .partners-img, .partners-info {
-                padding: 2rem 1rem;
+            padding: 0;
+            & div {
+                padding: 1rem;
+                min-height: 240px;
             }
         }
     }
+
     #friends {
         & .frined-items {
             padding-left: 0;
@@ -113,7 +116,7 @@
         }
     }
     .wechat-layer {
-        right: 20px;
+        right: -30px;
     }
     #main-footer {
         & .footer-icon {
