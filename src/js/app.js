@@ -1,3 +1,14 @@
+// loading
+var loder = document.getElementsByClassName('loder-box')[0];
+
+document.onreadystatechange = function () {
+    if (document.readyState === 'complete' || document.readyState === 'loaded') {
+        if (loder) {
+            loder.style.display = 'none';
+        }
+    }
+}
+
 // 基础布局逻辑，主要是客户端尺寸判断处理
 var viewWidth = document.body.clientWidth || document.body.offsetWidth,
     viewHeight = document.body.clientHeight || document.body.offsetHeight;

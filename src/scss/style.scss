@@ -209,7 +209,7 @@ div {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 999;
+    z-index: 99;
     & .logo {
         & a{
             display: inline-block;
@@ -429,6 +429,56 @@ div {
     }
 }
 
+
+// css loading
+
+.loder-box {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    position: fixed;
+    z-index: 999;
+}
+
+
+
+.loader {
+    width: 80px;
+    height: 80px;
+    border: 1px solid $color-hover;
+    border-radius: 50%;
+    animation: 1s loader linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+.loader:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -.6em;
+    left: 50%;
+    border: 1em solid $color-hover;
+    border-radius: 50%;
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+// 媒体查询器
 @media screen and (max-width: 1500px) {
     #contact {
         & .contact-form, .contact-img {
