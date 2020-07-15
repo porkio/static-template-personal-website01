@@ -398,7 +398,7 @@ div {
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   z-index: 999; }
-  .loder-box .loader .loader {
+  .loder-box .loader {
     width: 80px;
     height: 80px;
     border: 1px solid #6aa426;
@@ -410,7 +410,7 @@ div {
     left: 50%;
     margin-left: -40px;
     margin-top: -40px; }
-    .loder-box .loader .loader:before {
+    .loder-box .loader:before {
       content: '';
       display: block;
       width: 0;
