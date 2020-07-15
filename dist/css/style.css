@@ -398,30 +398,28 @@ div {
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   z-index: 999; }
-
-.loader {
-  width: 80px;
-  height: 80px;
-  border: 1px solid #6aa426;
-  border-radius: 50%;
-  -webkit-animation: 1s loader linear infinite;
-          animation: 1s loader linear infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -40px;
-  margin-top: -40px; }
-
-.loader:before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: -.6em;
-  left: 50%;
-  border: 1em solid #6aa426;
-  border-radius: 50%; }
+  .loder-box .loader .loader {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #6aa426;
+    border-radius: 50%;
+    -webkit-animation: 1s loader linear infinite;
+            animation: 1s loader linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px; }
+    .loder-box .loader .loader:before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -.6em;
+      left: 50%;
+      border: 1em solid #6aa426;
+      border-radius: 50%; }
 
 @-webkit-keyframes loader {
   0% {
