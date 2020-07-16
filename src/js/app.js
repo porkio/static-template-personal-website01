@@ -9,6 +9,15 @@ document.onreadystatechange = function () {
     }
 }
 
+// 平滑滚动
+function scroll_to(eleId) {
+    var eleTop = document.getElementById(eleId).offsetTop;
+    window.scrollTo({
+        top: eleTop,
+        behavior: 'smooth'
+    });
+}
+
 // 基础布局逻辑，主要是客户端尺寸判断处理
 var viewWidth = document.body.clientWidth || document.body.offsetWidth,
     viewHeight = document.body.clientHeight || document.body.offsetHeight;
