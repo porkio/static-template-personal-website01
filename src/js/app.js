@@ -2,7 +2,7 @@
 var loder = document.getElementsByClassName('loder-box')[0];
 
 document.onreadystatechange = function () {
-    if (document.readyState === 'complete' || document.readyState === 'loaded') {
+    if (document.readyState === 'complete') {
         if (loder) {
             loder.style.display = 'none';
         }
